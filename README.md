@@ -1,0 +1,1 @@
+# konfetti-spring-boot-admin
