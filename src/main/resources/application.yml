@@ -1,0 +1,20 @@
+server:
+  port: 8180
+
+# remove env for production, default would be:
+#env, metrics, trace, dump, jolokia, info, configprops, trace, activiti, logfile, refresh, flyway, liquibase
+spring:
+  boot:
+    admin:
+      routes:
+        endpoints: metrics, trace, dump, jolokia, info, configprops, trace, activiti, logfile, refresh, flyway, liquibase
+
+security:
+  user:
+    name: user
+    password: password
+  basic:
+    enabled: true
+
+
+
