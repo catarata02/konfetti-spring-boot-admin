@@ -13,7 +13,7 @@ node {
     // ========================================================================
     checkout scm
     sh "./gradlew clean build"
-    step([$class: 'JUnitResultArchiver', testResults: '**/target/*-reports/TEST-*.xml'])
+//    step([$class: 'JUnitResultArchiver', testResults: '**/target/*-reports/TEST-*.xml'])
 
     echo "Git Branch : ${branch}"
     if (dockerBranches.contains(branch)) {
